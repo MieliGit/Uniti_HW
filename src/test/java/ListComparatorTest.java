@@ -3,7 +3,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.Arrays;
 import java.util.List;
 
-import org.example.App;
+import org.example.Main;
 import org.example.ListComparator;
 import org.junit.jupiter.api.Test;
 
@@ -49,7 +49,7 @@ public class ListComparatorTest {
     void compareLists_firstListHasHigherAverage_returnsFirstListMessage() {
         List<Integer> list1 = Arrays.asList(4, 5, 6);
         List<Integer> list2 = Arrays.asList(1, 2, 3);
-        String result = App.compareLists(list1, list2);
+        String result = Main.compareLists(list1, list2);
         assertEquals("Первый список имеет большее среднее значение", result);
     }
 
